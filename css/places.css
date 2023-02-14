@@ -1,0 +1,86 @@
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #005cbf;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+  
+    color: rgb(0, 0, 0);
+  } 
+  
+  .topnav a.split {
+    float: right;
+    color: rgb(0, 0, 0);
+  }
+  
+  #news #contact{
+    float: right;
+  }
+
+  .text{
+    line-height: 1.9;
+  }
+
+  body, html {  
+    height: 0;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    color: #111;
+    display: block;
+    flex-direction: row;
+    align-items: normal;
+    align-content: flex-start;
+    justify-content: flex-start;
+    background-color: #ECECEC;
+  }
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 5px;
+  }
+  
+  .gallery a.flex-column,
+  .gallery div.flex-column {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    cursor: default;
+  }
+  
+  .gallery a.flex-column img,
+  .gallery a.flex-column video,
+  .gallery div.flex-column img,
+  .gallery div.flex-column video {
+    border-radius: 2px;
+    width: 50%;
+    min-height: 50px;
+  }
+  
+  .gallery a.flex-column>div,
+  .gallery div.flex-column>div,
+  .gallery a.flex-column>h3,
+  .gallery div.flex-column>h3 {
+    width: 100%;
+    text-align: center;
+  }

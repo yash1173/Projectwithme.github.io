@@ -54,7 +54,7 @@ img {
 .banner h2,
 .banner h3,
 .banner p,
-.text1,
+.text1
 .banner span {
   color: rgb(0, 0, 0);
 }
@@ -106,6 +106,10 @@ img {
   max-width: 900px;
   align-self: flex-end;
   line-height: 1.5
+}
+
+.text{
+  line-height: 1.9;
 }
 
 .visit{
@@ -333,26 +337,71 @@ footer{
   background-color: #ff014fff;
 }
 
-/********** Responsive Design ********/
-@media(max-width:900px)
-{
-.row-footer{
-  flex-direction: column;
-}
-.col-footer{
+/* Places*/
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
   width: 100%;
-  text-align: left;
-  margin-bottom: 25px;
+  padding: 0 5px;
 }
+
+
+.gallery a.flex-column,
+.gallery div.flex-column {
+  padding: 15px;
+  cursor: default;
 }
-@media(max-width:768px)
-{
-.row-footer{
-  flex-direction: column;
-}
-.col-footer{
+
+.gallery .flex-column img,
+.gallery .flex-colum
+.gallery div.flex-column {
+  border-radius: 2px;
   width: 100%;
-  text-align: left;
-  margin-bottom: 20px;
+  background-size: 30px 30px;
+  background-position: center;
+  min-height: 50px;
 }
+
+.gallery a.flex-column
+.gallery div.flex-column
+.gallery a.flex-column
+.gallery div.flex-column {
+  width: 100%;
+  text-align: center;
 }
+
+.add-top-margin {
+  margin-top: 15px;
+}
+
+.add-top-margin-small {
+  margin-top: 5px;
+}
+
+.add-top-margin-large {
+  margin-top: 30px;
+}
+
+.add-bottom-margin {
+  margin-bottom: 15px;
+}
+
+.add-bottom-margin-small {
+  margin-bottom: 5px;
+}
+
+.add-bottom-margin-large {
+  margin-bottom: 30px;
+}
+
+  .gallery a.flex-column,
+  .gallery div.flex-column {
+    flex: 1 0 25%;
+    max-width: 25%;
+  }
